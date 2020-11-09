@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="invoice_payment_report_wizard_view" model="ir.ui.view">
+        <field name="name">Payment Group Report Wizard View</field>
+        <field name="model">payment.group.report.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <!-- Changing Modal Popup with JQuery - Not necessary, just for UI enhacement -->
+                <script>
+                    document.querySelector('.modal-dialog').style.cssText = 'width: 97%; height: 60%'
+                    document.querySelector('.modal-content').style.cssText = 'height: 100%'
+                    document.querySelector('.modal-body').style.cssText = 'height: 100%'
+                </script>
+                <group>
+                    <field name="payment_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}" />
+                </group>
+                <footer>
+                    <p class="text-warning"><strong><i class="fa fa-bell-o"></i> Payments in Draft Status are reflected as "Draft Payment" in the Name column</strong></p>
+                    <button name="generate_xls_report" string="Print XLSX" type="object" class="oe_highlight" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="payment_group_report_wizard_action" name="Payment Group Report (Withholdings discriminated)" res_model="payment.group.report.wizard" src_model="account.payment.group" view_type="form" view_mode="form" target="new" multi="True" />
+
+</odoo>
