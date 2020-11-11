@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo >
+    <data >
+    
+
+
+
+        <report 
+            id="action_report_partner_plan"
+            string="Print Account Report"
+            model="res.partner" 
+            report_type="qweb-html"
+            file="payment_terms.report_partner_plan" 
+            name="payment_terms.report_partner_plan"
+            print_report_name="'Account - %s' % (object.name)"
+        />
+
+    
+
+    </data>
+</odoo>
