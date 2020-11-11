@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<template id="report_partner_plan_template">
+    <t t-call="web.external_layout">
+    <t t-set="partner" t-value="partner.with_context({'lang':partner.lang})" />
+    <t t-set="data" t-value="partner.get_account_status()" />
+    <div class="page">
+        
+            <div class="oe_structure"/>
+                <h3>
+                    <div class="account_tittle">
+                    <t >
+                        <span>Account Status # </span>
+                    </t>
+                    </div>
+                </h3>
+
+                
+                <div class="row mt32 mb32" id="informations">
+                <div  class="col-xs-3">
+                    <strong>Partner:</strong>
+                    <p t-field="partner.name"/>
+                </div>
+                </div>
+
+                <div class="row mt32 mb32" id="informations">
+                <div class="col-xs-3">
+                    <strong>Amount Invoiced:</strong>
+                    <p t-esc="data['amount_invoiced']"/>
+                </div>
+                <div class="col-xs-3">
+                    <strong>Amount Overdue:</strong>
+                    <p t-esc="data['amount_overdue']"/>
+                </div>
+                <div class="col-xs-3">
+                    <strong>Amount Payed:</strong>
+                    <p t-esc="data['amount_payed']"/>
+                </div>
+                <div class="col-xs-3">
+                    <strong>Amount Residual:</strong>
+                    <p t-esc="data['amount_residual']"/>
+                </div>
+                </div>
+
+                <br/>
+
+                   
+                
+
+
+                <t t-if="data['types']">
+                <div class="clearfix">
+                        <div class="row" name="total">
+                        <table class="table table-condensed">
+                            <thead>
+                                    <tr class="border-black" style="background-color: #dddddd;">
+                                        <th style="min-width: 75px;max-width:75px;">Invoice</th>
+                                        <th style="min-width: 75px;max-width:75px;">Reference</th>
+                                        <th>Date</th>
+                                        
+                                        <th class="text-right" >Amount</th>
+                                        <th class="text-right" >OverDue</th>
+                                        <th class="text-right" >Payed</th>
+                                        <th class="text-right" >%</th>
+                                        <th class="text-right" >Residual </th>
+                                        
+                                    </tr>
+                            </thead>
+                            <tbody class="sale_tbody">
+
+                    <t t-foreach="data['types']" t-as='type'>
+                        <tr class="border-black" style="background-color: #dddddd;">
+                            <td style="min-width: 75px;max-width:75px;">
+                            <t t-esc="type['type']" />
+                            </td>
+                            <td style="min-width: 75px;max-width:75px;"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+
+                        <t t-foreach="type['invoices']" t-as='invoice'>
+                        
+                            <tr class="border-black" style="background-color: #cccccc;">
+                                <td><t t-esc="invoice['name']" style="min-width: 75px;max-width:75px;"/></td>
+                                <td><t t-esc="invoice['reference']" style="min-width: 75px;max-width:75px;"/></td>
+                                <td><t t-esc="invoice['date']"/></td>
+                                
+                                <td class="text-right">
+                                    <t t-esc="invoice['amount']"/>
+                                </td>
+                                <td class="text-right">
+                                    <t t-esc="invoice['overdue']"/>
+                                </td>
+                                <td class="text-right">
+                                    <t t-esc="invoice['payed']"/>
+                                </td>
+                                <td class="text-right">
+                                    <t t-esc="invoice['percentage']"/>
+                                </td>
+                                <td class="text-right">
+                                    <t t-esc="invoice['residual']"/>
+                                </td>
+                            </tr>
+                                                              
+                            
+                            <t t-foreach="invoice['debt_lines']" t-as='line'>
+                                <tr>
+                                <td style="min-width: 75px;max-width: 75px;"/>
+                                <td style="min-width: 75px;max-width: 75px;">
+                                <t t-esc="line['date']" /> </td>
+
+                                <td><t t-esc="line['date_maturity']" /> </td>
+                                
+                                <td class="text-right"><t t-esc="line['balance']" /> </td>
+                                <td class="text-right"><t t-esc="line['overdue']" /> </td>
+                                <td class="text-right"><t t-esc="line['payment_amount']" /></td>
+                                <td class="text-right"><t t-esc="line['percentage']" /></td>
+                                <td class="text-right"><t t-esc="line['amount_residual']" /></td>
+                                
+                                </tr> 
+                            </t>
+                        </t>
+                    </t>
+                        </tbody>                            
+                        </table>
+                        </div>
+                </div>
+                </t>
+                    
+            </div>
+                        
+   
+    </t>
+</template>
+
+
+<template id="report_partner_plan">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="partner">
+            <t t-call="payment_terms.report_partner_plan_template" />
+        </t>
+    </t>
+</template>
+
+
+
+</odoo>

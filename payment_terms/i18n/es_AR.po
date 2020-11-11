@@ -1,0 +1,138 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* payment_terms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-13 17:44+0000\n"
+"PO-Revision-Date: 2020-03-13 17:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "<span>Account Status # </span>"
+msgstr "<span>Estado de Cuenta # </span>"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "<strong>Amount Invoiced:</strong>"
+msgstr "<strong>Total Facturado:</strong>"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "<strong>Amount Overdue:</strong>"
+msgstr "<strong>Total Vencido:</strong>"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "<strong>Amount Payed:</strong>"
+msgstr "<strong>Total Pagado:</strong>"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "<strong>Amount Residual:</strong>"
+msgstr "<strong>Total Adeudado:</strong>"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "<strong>Partner:</strong>"
+msgstr "<strong>Cliente:</strong>"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "Amount"
+msgstr "Importe"
+
+#. module: payment_terms
+#: model:ir.model.fields,field_description:payment_terms.field_account_invoice_check_plan
+msgid "Check Plan"
+msgstr "Verificar Plan"
+
+#. module: payment_terms
+#: model:ir.model,name:payment_terms.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "Date"
+msgstr "Fecha"
+
+#. module: payment_terms
+#: model:ir.model.fields,field_description:payment_terms.field_account_payment_term_plan_day
+msgid "Day of Month"
+msgstr "Dia del Mes"
+
+#. module: payment_terms
+#: model:ir.model,name:payment_terms.model_account_invoice
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "OverDue"
+msgstr "Vencido"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "Payed"
+msgstr "Pagado"
+
+#. module: payment_terms
+#: model:ir.model,name:payment_terms.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Plazos de pago"
+
+#. module: payment_terms
+#: model:ir.model.fields,field_description:payment_terms.field_account_payment_term_plan
+msgid "Plan"
+msgstr "Plan"
+
+#. module: payment_terms
+#: model:ir.model.fields,field_description:payment_terms.field_account_payment_term_plan_split
+msgid "Plan Split"
+msgstr "Cuotas"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.view_payment_term_form_inherit
+msgid "Plan Terms"
+msgstr "Terminos del Plan"
+
+#. module: payment_terms
+#: model:ir.model.fields,field_description:payment_terms.field_account_invoice_postpone
+msgid "Postpone Due Date"
+msgstr "Posponer Fecha de Vencimiento"
+
+#. module: payment_terms
+#: model:ir.model.fields,help:payment_terms.field_account_invoice_postpone
+msgid "Postpone Due Date a Month"
+msgstr "Pospone la fecha de vencimiento un mes"
+
+#. module: payment_terms
+#: model:ir.actions.report,name:payment_terms.action_report_partner_plan
+msgid "Print Account Report"
+msgstr "Imprimir Reporte de Cuenta"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: payment_terms
+#: model:ir.ui.view,arch_db:payment_terms.report_partner_plan_template
+msgid "Residual"
+msgstr "Adeudado"
+
+#. module: payment_terms
+#: model:ir.model.fields,help:payment_terms.field_account_payment_term_plan
+msgid "This is a plan payment term"
+msgstr "Esto son los terminos del plan"
+
