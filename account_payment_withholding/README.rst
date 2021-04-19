@@ -1,5 +1,5 @@
 ===================
-Contract Sale Order
+Payment report
 ===================
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -23,7 +23,7 @@ Contract Sale Order
 
 .. !!! Description must be max 2-3 paragraphs, and is required.
 
-This module adds a "Canal" field in the Purchase Request, to improve the query through this filter.
+This module adds a column "withholding number" and "Payment Amount in Company Currency" to payment report.
 
 **Table of contents**
 
@@ -35,14 +35,14 @@ This module adds a "Canal" field in the Purchase Request, to improve the query t
 Install
 =======
 
-Search Contract Sale Order in apps and install the module.
+Install the module
 
 Usage
 =====
 
-1. Go to contract.
-2. Complete the form.
-3. Push "create sale" button.
+1. Go to account
+2. Go to payment report
+3. view columns
 
 Known issues / Roadmap
 ======================
@@ -70,7 +70,7 @@ Contributors
   * Jhone Mendez
   * Federico Gregori
   * Cristian Paradiso
-  * Milton Guzman
+  * Andres Andrade
 
 Maintainers
 ~~~~~~~~~~~
@@ -84,4 +84,4 @@ This module is maintained by the Calyx Servicios S.A.
 CALYX SERVICIOS S.A. It is part of the PGK Consultores economic group, member of an important global network, a world organization positioned among the 20 largest consultant-studios in the world.
 The PGK Consultores group is one of the 20 largest consultant-studios in Argentina with nearly 200 professionals.
 
-This module is part of the `Custom_iting <https://github.com/calyx-servicios/custom-iting>`_ project on Github.
+This module is part of the `Calyx-account-payment <https://github.com/calyx-servicios/calyx-account-payment>`_ project on Github.

@@ -10,7 +10,7 @@
                 <field name="signed_amount_company_currency"/>
             </field>
             <field name="display_name" position="after">
-                <field name="withholding_number"/>
+                <field name="withholing_number"/>
             </field>
         </field>
     </record>
