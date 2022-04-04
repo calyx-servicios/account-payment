@@ -1,6 +1,6 @@
-===================
-Payment report
-===================
+=====================
+Account Payment Group
+=====================
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! This file is intended to be in every module    !!
@@ -23,7 +23,7 @@ Payment report
 
 .. !!! Description must be max 2-3 paragraphs, and is required.
 
-This module adds a column "withholding number" and "Payment Amount in Company Currency" to payment report.
+This module extends the functionality of ... to support ... and to allow you to ...
 
 **Table of contents**
 
@@ -35,14 +35,19 @@ This module adds a column "withholding number" and "Payment Amount in Company Cu
 Install
 =======
 
-Install the module
+Do this ...
+
+.. !!! Configuration: This file is optional, it should explain how to configure the module before using it; it is aimed at advanced users. To configure this module, you need to:
+
+Configure
+=========
+
+Go to ...
 
 Usage
 =====
 
-1. Go to account
-2. Go to payment report
-3. view columns
+1. Go to ...
 
 Known issues / Roadmap
 ======================
@@ -65,12 +70,9 @@ Authors
 Contributors
 ~~~~~~~~~~~~
 
-* `Calyx Servicios S.A. <http://www.calyxservicios.com.ar/>`_
+* `Calyx Servicios S.A. <http://odoo.calyx-cloud.com.ar/>`_
   
-  * Jhone Mendez
-  * Federico Gregori
-  * Cristian Paradiso
-  * Andres Andrade
+  * Marco Oegg
 
 Maintainers
 ~~~~~~~~~~~
@@ -79,9 +81,9 @@ This module is maintained by the Calyx Servicios S.A.
 
 .. image:: https://ss-static-01.esmsv.com/id/13290/galeriaimagenes/obtenerimagen/?width=120&height=40&id=sitio_logo&ultimaModificacion=2020-05-25+21%3A45%3A05
    :alt: Odoo Calyx Servicios S.A.
-   :target: http://www.calyxservicios.com.ar/
+   :target: https://odoo.calyx-cloud.com.ar/
 
 CALYX SERVICIOS S.A. It is part of the PGK Consultores economic group, member of an important global network, a world organization positioned among the 20 largest consultant-studios in the world.
 The PGK Consultores group is one of the 20 largest consultant-studios in Argentina with nearly 200 professionals.
 
-This module is part of the `Calyx-account-payment <https://github.com/calyx-servicios/calyx-account-payment>`_ project on Github.
+This module is part of the `Odoo-Calyx <https://gitlab.com/calyxservicios-group/odoo/odoo-calyx>`_ project on Gitlab.

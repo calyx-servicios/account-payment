@@ -6,6 +6,9 @@
         <field name="model">account.payment</field>
         <field name="inherit_id" ref="account.view_account_payment_tree"/>
         <field name="arch" type="xml">
+            <field name="exchange_rate" position="after">
+                <field name="signed_amount_company_currency"/>
+            </field>
             <field name="display_name" position="after">
                 <field name="withholding_number"/>
             </field>
