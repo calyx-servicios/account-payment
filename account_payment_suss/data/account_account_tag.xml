@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<odoo noupdate="1">
-    <record id="tag_rg2682" model="account.account.tag">
-        <field name="name">Ret SUSS RG 2682</field>
-        <field name="applicability">taxes</field>
-    </record>
-</odoo>

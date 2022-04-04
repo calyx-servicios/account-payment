@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<odoo>
-    <report id="payment_group_report_action" model="payment.group.report.wizard" string="Payment Group Report" report_type="xlsx" name="account_payment_group_xlsx_report.payment_report_xlsx" file="Reporte Pagos a Proveedor" attachment_use="False" />
-</odoo>
