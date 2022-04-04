@@ -1,0 +1,14 @@
+<odoo>
+    <record id="add_payments_amount" model="ir.ui.view">
+        <field name="name">account.payment.group.search</field>
+        <field name="model">account.payment.group</field>
+        <field name="inherit_id" ref="account_payment_group.view_account_payment_group_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_methods']" position="after">
+                <field name="payments_amount" filter_domain="[('payments_amount','&gt;',self)]" string="Amount greater than"/>
+                <field name="payments_amount" filter_domain="[('payments_amount','=',self)]" string="Amount equal to"/>
+                <field name="payments_amount" filter_domain="[('payments_amount','&lt;',self)]" string="Amount less than"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
