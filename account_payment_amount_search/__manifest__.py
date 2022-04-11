@@ -14,7 +14,7 @@
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Account',
-    'version': '11.0.1.0.0',
+    'version': '13.0.1.0.0',
     # see https://odoo-community.org/page/development-status
     'development_status': 'Production/Stable',
 

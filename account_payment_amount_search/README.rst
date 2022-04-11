@@ -1,6 +1,6 @@
-=====================
-Account Payment Group
-=====================
+================================
+Account Payment Search by Amount
+================================
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! This file is intended to be in every module    !!
@@ -23,7 +23,7 @@ Account Payment Group
 
 .. !!! Description must be max 2-3 paragraphs, and is required.
 
-This module extends the functionality of ... to support ... and to allow you to ...
+This module extends the functionality of account_payment_group to allow you to search payments by amount
 
 **Table of contents**
 
