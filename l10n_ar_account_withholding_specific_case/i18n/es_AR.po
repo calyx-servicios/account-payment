@@ -1,0 +1,61 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ar_account_withholding_specific_case
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-24 17:44+0000\n"
+"PO-Revision-Date: 2022-05-24 17:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model_terms:ir.ui.view,arch_db:l10n_ar_account_withholding_specific_case.form_account_tax
+msgid ""
+"<i class=\"fa fa-exclamation-triangle\"/>\n"
+"                        Remember that every Withholding Specific Case Type is available in an independent module."
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle\"/>\n"
+"                        Recuerde que cada Tipo de Retención Específica está disponible en su módulo independiente."
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model:ir.model.fields.selection,name:l10n_ar_account_withholding_specific_case.selection__account_tax__withholding_type_specific_case__no_case
+msgid "No Specific Case"
+msgstr "Sin Caso Específico"
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model:ir.model.fields.selection,name:l10n_ar_account_withholding_specific_case.selection__account_tax__withholding_type__specific_case
+msgid "Specific Case"
+msgstr "Caso Específico"
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model:ir.model,name:l10n_ar_account_withholding_specific_case.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model:ir.model.fields,help:l10n_ar_account_withholding_specific_case.field_account_tax__withholding_type
+msgid "The computation method for the tax amount."
+msgstr "Método de cálculo para el importe del impuesto."
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model:ir.model.fields,field_description:l10n_ar_account_withholding_specific_case.field_account_tax__withholding_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_ar_account_withholding_specific_case
+#: model:ir.model.fields,field_description:l10n_ar_account_withholding_specific_case.field_account_tax__withholding_type_specific_case
+msgid "Withholding Type Specific Case"
+msgstr "Tipo de Retención Específica"
+
+#. module: l10n_ar_account_withholding_specific_case
+#: code:addons/l10n_ar_account_withholding_specific_case/models/account_tax.py:0
+#, python-format
+msgid "You must select a Specific Case for this withholding type."
+msgstr "Debe seleccionar un Tipo de Retención Específica para este tipo de retención."
