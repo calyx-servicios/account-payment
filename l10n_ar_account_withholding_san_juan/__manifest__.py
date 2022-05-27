@@ -15,10 +15,4 @@
     "application": False,
     "installable": True,
     "depends": ["l10n_ar_account_withholding_specific_case"],
-    ### XML Data files
-    # 'data': [
-    #     'security/ir.model.access.csv',
-    #     'views/views.xml',
-    #     'views/templates.xml',
-    # ],
 }
