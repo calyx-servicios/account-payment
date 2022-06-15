@@ -1,7 +1,6 @@
 from odoo.exceptions import UserError, ValidationError
-from odoo.models import BaseModel
 from ast import literal_eval
-from odoo import models
+from odoo import models, _
 
 class AccountTax(models.Model):
     _inherit = "account.tax"
@@ -67,4 +66,4 @@ class AccountTax(models.Model):
                     vals['partner_type'] = payment_group.partner_type
                     vals['partner_id'] = payment_group.partner_id.id
                     payment_withholding = payment_withholding.create(vals)
-        return BaseModel.create_payment_withholdings(self, payment_group)
+        return True
