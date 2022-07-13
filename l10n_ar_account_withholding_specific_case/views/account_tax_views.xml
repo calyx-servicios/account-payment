@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="form_account_tax" model="ir.ui.view">
+        <field name="name">account.tax.form add: withholding_type_specific_case</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='withholding_python_compute']" position="before">
+                <label for="withholding_type_specific_case" attrs="{'invisible': [('withholding_type', '!=', 'specific_case')]}" />
+                <div attrs="{'invisible': [('withholding_type', '!=', 'specific_case')]}">
+                    <field name="withholding_type_specific_case" class="oe_inline" />
+                    <p class="text-info mt-1">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        Remember that every Withholding Specific Case Type is available in an independent module.
+                    </p>
+                </div>
+            </xpath>
+            <xpath expr="//group[@name='withholdings']/following-sibling::group" position="attributes">
+                <attribute name="attrs">{'invisible': [('withholding_type', 'in', ('none', 'specific_case'))]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='withholding_amount_type']" position="attributes">
+                <attribute name="attrs">{'required': [('withholding_type', 'not in', ('none', 'specific_case'))]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
