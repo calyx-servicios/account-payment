@@ -17,7 +17,8 @@ Withholding Non-Taxable Minimum
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-calyx--servicios%2Faccount--payment-lightgray.png?logo=github
     :target: https://github.com/calyx-servicios/account-payment
-    :alt: calyx-servicios/multi-store.git
+    :alt: calyx-servicios/account-payment.git
+
 
 |badge1| |badge2| |badge3|
 
