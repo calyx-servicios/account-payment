@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+
+    <record id="view_account_payment_group_form_cancel_receipts" model="ir.ui.view">
+        <field name="model">account.payment.group</field>
+        <field name="name">view_account_payment_group_form_cancel_receipts</field>
+        <field name="inherit_id" ref="account_payment_group.view_account_payment_group_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='cancel']" position="replace">
+                <button name="cancel" attrs="{'invisible': [('state', '=', 'cancel')]}" string="Cancel" type="object" groups="account_payment_group_cancel_receipts.group_cancel_receipts"/>
+            </xpath>
+        </field>
+    </record>
+
+  </data>
+</odoo>
+
+
